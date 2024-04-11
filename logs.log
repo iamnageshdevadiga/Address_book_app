@@ -1,0 +1,21 @@
+INFO:root:Address created: <models.Address object at 0x0000015C3FF15190>
+INFO:root:Address created: <models.Address object at 0x0000015C43591C70>
+INFO:root:Address created: <models.Address object at 0x0000015C435C4FE0>
+INFO:root:Address deleted: <models.Address object at 0x0000015C435C4950>
+INFO:root:Address created: <models.Address object at 0x000001EF4801C890>
+INFO:root:Address created: id=6, street=string, city=string, latitude=0.2, longitude=0.3
+INFO:root:Address created: id=7, street=string, city=string, latitude=2.5, longitude=2.9
+INFO:root:Address created: id=8, street=string, city=string, latitude=3.5, longitude=3.9
+INFO:root:Address created: id=9, street=string, city=string, latitude=5.5, longitude=5.9
+INFO:root:Address created: id=10, street=string, city=string, latitude=40.7128, longitude=-74.006
+INFO:root:Address created: id=11, street=string, city=string, latitude=44.7128, longitude=-75.006
+INFO:root:Address created: id=12, street=string, city=string, latitude=54.7128, longitude=-75.006
+INFO:root:Address created: id=13, street=string, city=string, latitude=54.7128, longitude=-75.006
+INFO:root:Address created: id=14, street=string, city=string, latitude=54.7128, longitude=-75.006
+INFO:root:Address created: id=15, street=string, city=string, latitude=54.7128, longitude=-75.006
+INFO:root:Address deleted: id=15, street=string, city=string, latitude=54.7128, longitude=-75.006
+INFO:root:Address deleted: id=14, street=string, city=string, latitude=54.7128, longitude=-75.006
+INFO:root:Address updated: <models.Address object at 0x0000029599BC9E50>
+INFO:root:Address updated: <models.Address object at 0x000001FAFE45D190>
+INFO:root:Address updated: <models.Address object at 0x00000245C77BD3A0>
+INFO:root:Address updated: <models.Address object at 0x00000245C77BE300>
