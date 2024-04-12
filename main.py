@@ -74,10 +74,14 @@ def update_address(
     -->longitude: Longitude coordinates
     """
     session_address = session.query(Address).filter(Address.id == address_id).first()
+
     if session_address is None:
         raise HTTPException(status_code=404, detail="Address not found")
-    for attr, value in address.dict().items():
-        setattr(session_address, attr, value)
+    
+    # Update only the provided fields
+    for field, value in address.dict(exclude_unset=True).items():
+        setattr(session_address, field, value)
+
     session.commit()
     session.refresh(session_address)
     logging.info(f"Address id {session_address.id} updated successfully!!")
@@ -126,9 +130,13 @@ def get_addresses_within_distance(
     # Calculate distance between each address and the given point
     addresses = session.query(Address).all()
     point = Point(longitude, latitude)
+
+    if not addresses:
+        raise HTTPException(status_code=404, detail="No addresses found")
     addresses_within_distance = [
         address
         for address in addresses
         if Point(address.longitude, address.latitude).distance(point) <= distance
     ]
+    
     return addresses_within_distance
