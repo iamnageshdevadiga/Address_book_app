@@ -43,3 +43,22 @@ Activate the virtual environment:
 
     For Unix/Linux:
     source venv/bin/activate
+
+
+## Install dependencies:
+
+    pip install -r requirements.txt
+
+
+## Running the Application
+    Run the following command to start the FastAPI application:
+    uvicorn main:app --reload
+
+## Contributing
+
+Feel free to contribute to this project. Follow the contribution guidelines for more details.
+
+
+## License
+
+This project is licensed under the MIT License.
