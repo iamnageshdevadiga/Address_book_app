@@ -1,4 +1,4 @@
-fastapi==0.68.0
-uvicorn==0.15.0
-sqlalchemy==1.4.25
-shapely==1.7.1
+fastapi
+uvicorn
+sqlalchemy
+shapely
