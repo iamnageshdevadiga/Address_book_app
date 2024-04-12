@@ -19,6 +19,7 @@ from shapely.geometry import Point
 
 app = FastAPI()
 
+#This will create the database table
 Base.metadata.create_all(bind=engine)
 
 # Logging setup
