@@ -10,7 +10,8 @@ Update Address: Allows users to update existing addresses by ID.
 
 Delete Address: Allows users to delete addresses by ID.
 
-Get Addresses: Allows users to retrieve a list of addresses with pagination support.
+Get Addresses: to retrieve the addresses that are within a given distance and
+location coordinates.
 
 ## Technologies Used
 
